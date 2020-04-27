@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/material-kit-react/static/css/main.5450793a.chunk.css",
+    "main.js": "/material-kit-react/static/js/main.f10ff9e8.chunk.js",
+    "main.js.map": "/material-kit-react/static/js/main.f10ff9e8.chunk.js.map",
+    "runtime~main.js": "/material-kit-react/static/js/runtime~main.3b390e44.js",
+    "runtime~main.js.map": "/material-kit-react/static/js/runtime~main.3b390e44.js.map",
+    "static/js/2.4423e436.chunk.js": "/material-kit-react/static/js/2.4423e436.chunk.js",
+    "static/js/2.4423e436.chunk.js.map": "/material-kit-react/static/js/2.4423e436.chunk.js.map",
+    "index.html": "/material-kit-react/index.html",
+    "precache-manifest.c9a569e0fbc9aee8b8d51b3baa3b31a6.js": "/material-kit-react/precache-manifest.c9a569e0fbc9aee8b8d51b3baa3b31a6.js",
+    "service-worker.js": "/material-kit-react/service-worker.js",
+    "static/css/main.5450793a.chunk.css.map": "/material-kit-react/static/css/main.5450793a.chunk.css.map",
+    "static/media/Gnus.JPG": "/material-kit-react/static/media/Gnus.f18c6972.JPG",
+    "static/media/Mountains.jpg": "/material-kit-react/static/media/Mountains.04e30936.jpg",
+    "static/media/Nellie.jpg": "/material-kit-react/static/media/Nellie.63782fed.jpg",
+    "static/media/Skiing.JPG": "/material-kit-react/static/media/Skiing.b4a72558.JPG",
+    "static/media/Sunset.jpg": "/material-kit-react/static/media/Sunset.a36c8aa5.jpg",
+    "static/media/XCSkiing.jpg": "/material-kit-react/static/media/XCSkiing.f8b7c5b1.jpg",
+    "static/media/danielle.jpg": "/material-kit-react/static/media/danielle.f5f3ba01.jpg",
+    "static/media/profile-bg.jpg": "/material-kit-react/static/media/profile-bg.e840a11c.jpg"
+  }
+}
