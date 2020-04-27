@@ -22,6 +22,7 @@ import studio5 from "assets/img/ProfilePage/Sunset.jpg";
 import studio6 from "assets/img/ProfilePage/Nellie.jpg";
 
 import styles from "assets/jss/material-kit-react/views/profilePage.js";
+import { EndP } from "./styled";
 
 const useStyles = makeStyles(styles);
 
@@ -60,7 +61,7 @@ export default function ProfilePage(props) {
                   <div className={classes.name}>
                     <h3 className={classes.title}>Danielle Elizabeth</h3>
                     <h6>SOFTWARE ENGINEER</h6>
-                    <Button justIcon link className={classes.margin5}>
+                    {/* <Button justIcon link className={classes.margin5}>
                       <i className={"fab fa-twitter"} />
                     </Button>
                     <Button justIcon link className={classes.margin5}>
@@ -68,14 +69,13 @@ export default function ProfilePage(props) {
                     </Button>
                     <Button justIcon link className={classes.margin5}>
                       <i className={"fab fa-facebook"} />
-                    </Button>
+                    </Button> */}
                   </div>
                 </div>
               </GridItem>
             </GridContainer>
             <div className={classes.description}>
-              <p>B.C. born, WA local. {""}</p>
-              <p>Mountain enthusiast, animal lover, coffee addict.{""}</p>
+              <EndP>B.C. born, WA local. Mountain enthusiast, animal lover, coffee addict.</EndP>
             </div>
             <GridContainer justify="center">
               <GridItem xs={12} sm={12} md={4}>

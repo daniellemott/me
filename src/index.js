@@ -12,6 +12,7 @@ var hist = createBrowserHistory();
 
 ReactDOM.render(
   <Router history={hist}>
+    {console.log("hello")}
     <Switch>
       <Route path="/" component={ProfilePage} />
     </Switch>

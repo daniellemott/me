@@ -12,6 +12,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Favorite from "@material-ui/icons/Favorite";
 
 import styles from "assets/jss/material-kit-react/components/footerStyle.js";
+import { InProgressMessage } from "./styled";
 
 const useStyles = makeStyles(styles);
 
@@ -29,7 +30,8 @@ export default function Footer(props) {
   return (
     <footer className={footerClasses}>
       <div className={classes.container}>
-        <div className={classes.left}>
+        <InProgressMessage>This website is in progress. Thank you for your patience.</InProgressMessage>
+        {/* <div className={classes.left}>
           <List className={classes.list}>
             <ListItem className={classes.inlineBlock}>
               <a
@@ -68,7 +70,7 @@ export default function Footer(props) {
               </a>
             </ListItem>
           </List>
-        </div>
+        </div> */}
       </div>
     </footer>
   );
