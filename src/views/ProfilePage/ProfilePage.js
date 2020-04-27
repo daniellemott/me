@@ -6,6 +6,8 @@ import { makeStyles } from "@material-ui/core/styles";
 // core components
 import Header from "components/Header/Header.js";
 import Footer from "components/Footer/Footer.js";
+import HorizontalSliderContainer from "views/Components/HorizontalSliderContainer";
+
 // import Button from "components/CustomButtons/Button.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
@@ -13,7 +15,6 @@ import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
 
 import profile from "assets/img/faces/danielle.jpg";
-
 import studio1 from "assets/img/ProfilePage/Gnus.JPG";
 import studio2 from "assets/img/ProfilePage/Mountains.jpg";
 import studio3 from "assets/img/ProfilePage/Skiing.JPG";
@@ -84,9 +85,12 @@ export default function ProfilePage(props) {
               </GridItem>
             </GridContainer>
             <div className={classes.description}>
-              <EndP>B.C. born, WA local. Mountain enthusiast, animal lover, coffee addict.</EndP>
+              <EndP>
+                B.C. born, WA local. Mountain enthusiast, animal lover, coffee
+                addict.
+              </EndP>
             </div>
-            <h3>Image Gallery</h3>
+            <h5>Image Gallery</h5>
             <GridContainer justify="center">
               <GridItem xs={12} sm={12} md={3}>
                 <img alt="..." src={studio5} className={navImageClasses} />
@@ -110,6 +114,9 @@ export default function ProfilePage(props) {
                 <img alt="..." src={studio10} className={navImageClasses} />
               </GridItem>
             </GridContainer>
+            <h5>What I like :)</h5>
+            <HorizontalSliderContainer></HorizontalSliderContainer> 
+
           </div>
         </div>
       </div>
