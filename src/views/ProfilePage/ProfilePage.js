@@ -29,9 +29,8 @@ import studio11 from "assets/img/ProfilePage/mountains_hat.jpg";
 import studio12 from "assets/img/ProfilePage/jump.jpg";
 import studio13 from "assets/img/ProfilePage/kenya.jpg";
 
-
 import styles from "assets/jss/material-kit-react/views/profilePage.js";
-import { EndP } from "./styled";
+import { EndP, InterestConainer, AboutWrapper } from "./styled";
 
 const useStyles = makeStyles(styles);
 
@@ -114,9 +113,20 @@ export default function ProfilePage(props) {
                 <img alt="..." src={studio10} className={navImageClasses} />
               </GridItem>
             </GridContainer>
-            <h5>What I like :)</h5>
-            <HorizontalSliderContainer></HorizontalSliderContainer> 
-
+            <h5>What I like</h5>
+            <InterestConainer>
+              <AboutWrapper>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse quis euismod orci. Morbi sed elementum purus, et
+                convallis tortor. Nunc dapibus arcu vitae sagittis pulvinar.
+                Integer tincidunt ligula ut ultrices rhoncus. Class aptent
+                taciti sociosqu ad litora torquent per conubia nostra, per
+                inceptos himenaeos. Mauris placerat condimentum arcu, sed
+                consectetur urna commodo vulputate. Morbi ac luctus odio. Etiam
+                blandit diam fermentum est gravida posuere hendrerit non lorem.
+              </AboutWrapper>
+              <HorizontalSliderContainer></HorizontalSliderContainer>
+            </InterestConainer>
           </div>
         </div>
       </div>
