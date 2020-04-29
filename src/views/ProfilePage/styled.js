@@ -11,8 +11,6 @@ export const InterestConainer = styled.div`
 
 export const AboutWrapper = styled.div`
   margin-right: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 300px;
+  text-align: left;
+  font-size: 0.9rem;
 `;

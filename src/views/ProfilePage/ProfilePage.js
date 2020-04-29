@@ -1,12 +1,11 @@
 import React from "react";
-// nodejs library that concatenates classes
 import classNames from "classnames";
-// @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-// core components
+
 import Header from "components/Header/Header.js";
 import Footer from "components/Footer/Footer.js";
 import HorizontalSliderContainer from "views/Components/HorizontalSliderContainer";
+import Gallery from "views/Components/Gallery";
 
 // import Button from "components/CustomButtons/Button.js";
 import GridContainer from "components/Grid/GridContainer.js";
@@ -15,19 +14,6 @@ import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
 
 import profile from "assets/img/faces/danielle.jpg";
-import studio1 from "assets/img/ProfilePage/Gnus.JPG";
-import studio2 from "assets/img/ProfilePage/Mountains.jpg";
-import studio3 from "assets/img/ProfilePage/Skiing.JPG";
-import studio4 from "assets/img/ProfilePage/XCSkiing.jpg";
-import studio5 from "assets/img/ProfilePage/Sunset.jpg";
-import studio6 from "assets/img/ProfilePage/Nellie.jpg";
-import studio7 from "assets/img/ProfilePage/waterfall.jpg";
-import studio8 from "assets/img/ProfilePage/portugal.jpg";
-import studio9 from "assets/img/ProfilePage/hummus.JPG";
-import studio10 from "assets/img/ProfilePage/sushi.jpg";
-import studio11 from "assets/img/ProfilePage/mountains_hat.jpg";
-import studio12 from "assets/img/ProfilePage/jump.jpg";
-import studio13 from "assets/img/ProfilePage/kenya.jpg";
 
 import styles from "assets/jss/material-kit-react/views/profilePage.js";
 import { EndP, InterestConainer, AboutWrapper } from "./styled";
@@ -42,7 +28,6 @@ export default function ProfilePage(props) {
     classes.imgRoundedCircle,
     classes.imgFluid
   );
-  const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
   return (
     <div>
       <Header
@@ -56,16 +41,18 @@ export default function ProfilePage(props) {
         }}
         {...rest}
       />
+      <section id="About">
       <Parallax small filter image={require("assets/img/profile-bg.jpg")} />
+      </section>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div>
           <div className={classes.container}>
             <GridContainer justify="center">
               <GridItem xs={12} sm={12} md={6}>
                 <div className={classes.profile}>
-                  <div>
-                    <img src={profile} alt="..." className={imageClasses} />
-                  </div>
+                    <div>
+                      <img src={profile} alt="..." className={imageClasses} />
+                    </div>
                   <div className={classes.name}>
                     <h3 className={classes.title}>Danielle Elizabeth</h3>
                     <h6>SOFTWARE ENGINEER</h6>
@@ -86,47 +73,52 @@ export default function ProfilePage(props) {
             <div className={classes.description}>
               <EndP>
                 B.C. born, WA local. Mountain enthusiast, animal lover, coffee
-                addict.
+                addict. Etiam scelerisque tellus ac tellus blandit, id maximus
+                lectus accumsan. Aenean pellentesque, turpis finibus imperdiet
+                iaculis, ex lectus hendrerit dolor, ut interdum arcu metus id
+                justo. Nullam ligula massa, sodales nec laoreet pulvinar,
+                commodo nec metus. Vestibulum rhoncus diam odio, vel dictum
+                nulla tempor at. Sed auctor cursus enim a iaculis. Aenean est
+                nibh, facilisis vitae magna vitae, luctus viverra turpis.
               </EndP>
             </div>
-            <h5>Image Gallery</h5>
-            <GridContainer justify="center">
-              <GridItem xs={12} sm={12} md={3}>
-                <img alt="..." src={studio5} className={navImageClasses} />
-                <img alt="..." src={studio1} className={navImageClasses} />
-                <img alt="..." src={studio11} className={navImageClasses} />
-              </GridItem>
-              <GridItem xs={12} sm={12} md={3}>
-                <img alt="..." src={studio2} className={navImageClasses} />
-                <img alt="..." src={studio9} className={navImageClasses} />
-                <img alt="..." src={studio4} className={navImageClasses} />
-                <img alt="..." src={studio12} className={navImageClasses} />
-              </GridItem>
-              <GridItem xs={12} sm={12} md={3}>
-                <img alt="..." src={studio8} className={navImageClasses} />
-                <img alt="..." src={studio13} className={navImageClasses} />
-                <img alt="..." src={studio6} className={navImageClasses} />
-              </GridItem>
-              <GridItem xs={12} sm={12} md={3}>
-                <img alt="..." src={studio3} className={navImageClasses} />
-                <img alt="..." src={studio7} className={navImageClasses} />
-                <img alt="..." src={studio10} className={navImageClasses} />
-              </GridItem>
-            </GridContainer>
-            <h5>What I like</h5>
-            <InterestConainer>
-              <AboutWrapper>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse quis euismod orci. Morbi sed elementum purus, et
-                convallis tortor. Nunc dapibus arcu vitae sagittis pulvinar.
-                Integer tincidunt ligula ut ultrices rhoncus. Class aptent
-                taciti sociosqu ad litora torquent per conubia nostra, per
-                inceptos himenaeos. Mauris placerat condimentum arcu, sed
-                consectetur urna commodo vulputate. Morbi ac luctus odio. Etiam
-                blandit diam fermentum est gravida posuere hendrerit non lorem.
-              </AboutWrapper>
-              <HorizontalSliderContainer></HorizontalSliderContainer>
-            </InterestConainer>
+            <section id="Gallery">
+              <h3
+                className={classes.title}
+                style={{ display: "block", fontSize: "1rem", margin: "0" }}
+              >
+                Gallery
+              </h3>
+              <Gallery></Gallery>
+            </section>
+            <section id="Interests">
+              <InterestConainer>
+                <div className={classes.description}>
+                  <AboutWrapper>
+                    <h3
+                      className={classes.title}
+                      style={{
+                        display: "block",
+                        fontSize: "1rem",
+                        margin: "0"
+                      }}
+                    >
+                      What I like
+                    </h3>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Suspendisse quis euismod orci. Morbi sed elementum purus, et
+                    convallis tortor. Nunc dapibus arcu vitae sagittis pulvinar.
+                    Integer tincidunt ligula ut ultrices rhoncus. Class aptent
+                    taciti sociosqu ad litora torquent per conubia nostra, per
+                    inceptos himenaeos. Mauris placerat condimentum arcu, sed
+                    consectetur urna commodo vulputate. Morbi ac luctus odio.
+                    Etiam blandit diam fermentum est gravida posuere hendrerit
+                    non lorem.
+                  </AboutWrapper>
+                </div>
+                <HorizontalSliderContainer></HorizontalSliderContainer>
+              </InterestConainer>
+            </section>
           </div>
         </div>
       </div>
