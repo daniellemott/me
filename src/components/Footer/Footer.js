@@ -1,20 +1,19 @@
-/*eslint-disable*/
 import React from "react";
-// nodejs library to set properties for components
 import PropTypes from "prop-types";
-// nodejs library that concatenates classes
-import classNames from "classnames";
-// material-ui core components
+
+import Button from "../CustomButtons/Button.js";
 import { List, ListItem } from "@material-ui/core";
+
+import classNames from "classnames";
 import { makeStyles } from "@material-ui/core/styles";
-
-// @material-ui/icons
-import Favorite from "@material-ui/icons/Favorite";
-
 import styles from "assets/jss/material-kit-react/components/footerStyle.js";
-import { InProgressMessage } from "./styled";
 
 const useStyles = makeStyles(styles);
+const LinksDict = {
+  "mailto:danielle.mott123@gmail.com": "fa fa-envelope",
+  "https://github.com/daniellemott": "fab fa-github",
+  "https://www.facebook.com/danielleelizabethm": "fab fa-facebook"
+};
 
 export default function Footer(props) {
   const classes = useStyles();
@@ -23,54 +22,18 @@ export default function Footer(props) {
     [classes.footer]: true,
     [classes.footerWhiteFont]: whiteFont
   });
-  const aClasses = classNames({
-    [classes.a]: true,
-    [classes.footerWhiteFont]: whiteFont
-  });
   return (
     <footer className={footerClasses}>
       <div className={classes.container}>
-        <InProgressMessage>This website is in progress. Thank you for your patience.</InProgressMessage>
-        {/* <div className={classes.left}>
-          <List className={classes.list}>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.creative-tim.com/?ref=mkr-footer"
-                className={classes.block}
-                target="_blank"
-              >
-                Creative Tim
-              </a>
+        <List className={classes.list}>
+          {Object.keys(LinksDict).map((Link, index) => (
+            <ListItem className={classes.inlineBlock} key={index}>
+              <Button justIcon link className={classes.margin5} href={Link}>
+                <i className={LinksDict[Link]} />
+              </Button>
             </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.creative-tim.com/presentation?ref=mkr-footer"
-                className={classes.block}
-                target="_blank"
-              >
-                About us
-              </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="http://blog.creative-tim.com/?ref=mkr-footer"
-                className={classes.block}
-                target="_blank"
-              >
-                Blog
-              </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.creative-tim.com/license?ref=mkr-footer"
-                className={classes.block}
-                target="_blank"
-              >
-                Licenses
-              </a>
-            </ListItem>
-          </List>
-        </div> */}
+          ))}
+        </List>
       </div>
     </footer>
   );

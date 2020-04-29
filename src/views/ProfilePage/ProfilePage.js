@@ -6,6 +6,7 @@ import Header from "components/Header/Header.js";
 import Footer from "components/Footer/Footer.js";
 import HorizontalSliderContainer from "views/Components/HorizontalSliderContainer";
 import Gallery from "views/Components/Gallery";
+import Button from "components/CustomButtons/Button.js";
 
 // import Button from "components/CustomButtons/Button.js";
 import GridContainer from "components/Grid/GridContainer.js";
@@ -19,6 +20,11 @@ import styles from "assets/jss/material-kit-react/views/profilePage.js";
 import { EndP, InterestConainer, AboutWrapper } from "./styled";
 
 const useStyles = makeStyles(styles);
+const LinksDict = {
+  "mailto:danielle.mott123@gmail.com": "fa fa-envelope",
+  "https://github.com/daniellemott": "fab fa-github",
+  "https://www.facebook.com/danielleelizabethm": "fab fa-facebook"
+};
 
 export default function ProfilePage(props) {
   const classes = useStyles();
@@ -42,7 +48,7 @@ export default function ProfilePage(props) {
         {...rest}
       />
       <section id="About">
-      <Parallax small filter image={require("assets/img/profile-bg.jpg")} />
+        <Parallax small filter image={require("assets/img/profile-bg.jpg")} />
       </section>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div>
@@ -50,22 +56,23 @@ export default function ProfilePage(props) {
             <GridContainer justify="center">
               <GridItem xs={12} sm={12} md={6}>
                 <div className={classes.profile}>
-                    <div>
-                      <img src={profile} alt="..." className={imageClasses} />
-                    </div>
+                  <div>
+                    <img src={profile} alt="..." className={imageClasses} />
+                  </div>
                   <div className={classes.name}>
                     <h3 className={classes.title}>Danielle Elizabeth</h3>
                     <h6>SOFTWARE ENGINEER</h6>
-                    {/* TODO: Add link to GitHub, link to FaceBook, link to email */}
-                    {/* <Button justIcon link className={classes.margin5}>
-                      <i className={"fab fa-twitter"} />
-                    </Button>
-                    <Button justIcon link className={classes.margin5}>
-                      <i className={"fab fa-instagram"} />
-                    </Button>
-                    <Button justIcon link className={classes.margin5}>
-                      <i className={"fab fa-facebook"} />
-                    </Button> */}
+                    {Object.keys(LinksDict).map((Link, index) => (
+                      <Button
+                        justIcon
+                        link
+                        className={classes.margin5}
+                        href={Link}
+                        key={index}
+                      >
+                        <i className={LinksDict[Link]} />
+                      </Button>
+                    ))}
                   </div>
                 </div>
               </GridItem>
@@ -87,7 +94,7 @@ export default function ProfilePage(props) {
                 className={classes.title}
                 style={{ display: "block", fontSize: "1rem", margin: "0" }}
               >
-                Gallery
+                My Adventures
               </h3>
               <Gallery></Gallery>
             </section>

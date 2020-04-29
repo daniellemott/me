@@ -8,48 +8,31 @@ import { makeStyles } from "@material-ui/core/styles";
 import styles from "assets/jss/material-kit-react/components/headerLinksStyle.js";
 
 const useStyles = makeStyles(styles);
+const HeaderTitles = {
+  "Who I Am": "#About",
+  "My Adventures": "#Gallery",
+  "What I Like": "#Interests"
+};
 
-export default function HeaderLinks(props) {
+export default function HeaderLinks() {
   const classes = useStyles();
   return (
     <List>
-      <ListItem className={classes.listItem}>
-        <AnchorLink href="#About" style={{ all: "unset" }}>
-          <Button
-            color="transparent"
-            borderColor="red"
-            target="_blank"
-            className={classes.navLink}
-            style={{ outline: "none" }}
-          >
-            About
-          </Button>
-        </AnchorLink>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <AnchorLink href="#Gallery" style={{ all: "unset" }}>
-          <Button
-            color="transparent"
-            target="_blank"
-            className={classes.navLink}
-            style={{ outline: "none" }}
-          >
-            Gallery
-          </Button>
-        </AnchorLink>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <AnchorLink href="#Interests" style={{ all: "unset" }}>
-          <Button
-            color="transparent"
-            target="_blank"
-            className={classes.navLink}
-            style={{ outline: "none" }}
-          >
-            Interests
-          </Button>
-        </AnchorLink>
-      </ListItem>
+      {Object.keys(HeaderTitles).map((HeaderTitle, index) => (
+        <ListItem className={classes.listItem} key={index}>
+          <AnchorLink href={HeaderTitles[HeaderTitle]} style={{ all: "unset" }}>
+            <Button
+              color="transparent"
+              borderColor="red"
+              target="_blank"
+              className={classes.navLink}
+              style={{ outline: "none" }}
+            >
+              {HeaderTitle}
+            </Button>
+          </AnchorLink>
+        </ListItem>
+      ))}
     </List>
   );
 }
