@@ -38,7 +38,6 @@ export default function ProfilePage(props) {
     <div>
       <Header
         color="transparent"
-        brand="Danielle Elizabeth"
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
@@ -48,7 +47,8 @@ export default function ProfilePage(props) {
         {...rest}
       />
       <section id="About">
-        <Parallax small filter image={require("assets/img/profile-bg.jpg")} />
+        {/* Thanks to Michael Benz (@michaelbenz) for the photo*/}
+        <Parallax small filter image={require("assets/img/forest.jpg")} />
       </section>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div>
@@ -60,7 +60,7 @@ export default function ProfilePage(props) {
                     <img src={profile} alt="..." className={imageClasses} />
                   </div>
                   <div className={classes.name}>
-                    <h3 className={classes.title}>Danielle Elizabeth</h3>
+                    <h3 className={classes.title}>Danielle Mott</h3>
                     <h6>SOFTWARE ENGINEER</h6>
                     {Object.keys(LinksDict).map((Link, index) => (
                       <Button
