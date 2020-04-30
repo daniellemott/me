@@ -110,7 +110,7 @@ export default function ProfilePage(props) {
                         margin: "0"
                       }}
                     >
-                      What I like
+                      What I Enjoy
                     </h3>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Suspendisse quis euismod orci. Morbi sed elementum purus, et
