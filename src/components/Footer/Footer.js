@@ -5,7 +5,7 @@ import classNames from "classnames";
 import { makeStyles } from "@material-ui/core/styles";
 import styles from "assets/jss/material-kit-react/components/footerStyle.js";
 
-import { QuoteWrapper, Quoted } from "./styled"
+import { QuoteWrapper } from "./styled"
 
 const useStyles = makeStyles(styles);
 
