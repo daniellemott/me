@@ -7,6 +7,9 @@ export const EndP = styled.p`
 export const InterestConainer = styled.div`
   display: flex;
   flex-direction: row;
+  @media (max-width: 999px) {
+    flex-direction: column;
+  }
 `;
 
 export const AboutWrapper = styled.div`

@@ -79,14 +79,14 @@ export default function ProfilePage(props) {
             </GridContainer>
             <div className={classes.description}>
               <EndP>
-                B.C. born, WA local. Mountain enthusiast, animal lover, coffee
-                addict. Etiam scelerisque tellus ac tellus blandit, id maximus
-                lectus accumsan. Aenean pellentesque, turpis finibus imperdiet
-                iaculis, ex lectus hendrerit dolor, ut interdum arcu metus id
-                justo. Nullam ligula massa, sodales nec laoreet pulvinar,
-                commodo nec metus. Vestibulum rhoncus diam odio, vel dictum
-                nulla tempor at. Sed auctor cursus enim a iaculis. Aenean est
-                nibh, facilisis vitae magna vitae, luctus viverra turpis.
+                Hi, I'm Danielle! I study computer science and math at Queen's
+                University. I never thought I'd be interested in computer
+                science. When I imagined a coder, I pictured the stereotypical
+                geeky kid fiddling with a motherboard in a dreary basement.
+                Luckily, my friend in my first year math class encouraged me to
+                try coding and I've been hooked since then. When I decide it's
+                time to turn off my laptop, I can be found exploring the North
+                Cascades mountains or enjoying a glass of <s>red wine</s> water.
               </EndP>
             </div>
             <section id="Gallery">
@@ -112,6 +112,9 @@ export default function ProfilePage(props) {
                     >
                       What I Enjoy
                     </h3>
+                    <p style={{ fontStyle: "italic" }}>
+                      This section is coming soon.
+                    </p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Suspendisse quis euismod orci. Morbi sed elementum purus, et
                     convallis tortor. Nunc dapibus arcu vitae sagittis pulvinar.

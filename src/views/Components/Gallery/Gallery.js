@@ -19,6 +19,8 @@ import Kenya from "assets/img/GalleryImg/Kenya.jpg";
 import classNames from "classnames";
 import styles from "assets/jss/material-kit-react/views/profilePage.js";
 
+import "./styled.css";
+
 import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles(styles);
 
@@ -28,25 +30,173 @@ export default function Gallery() {
   return (
     <GridContainer justify="center">
       <GridItem xs={12} sm={12} md={3}>
-        <img alt="..." src={Sunset} className={navImageClasses} />
-        <img alt="..." src={Gnus} className={navImageClasses} />
-        <img alt="..." src={Mountains_Hat} className={navImageClasses} />
+        <div className="hvrbox">
+          <img
+            alt="Sunset"
+            src={Sunset}
+            className={(navImageClasses, "hvrbox-layer_bottom")}
+          />
+
+          <div className="hvrbox-layer_top">
+            <p className={(classes.description, "hvrbox-text")}>Golden hour</p>
+          </div>
+        </div>
+        <div className="hvrbox">
+          <img
+            alt="Gnus"
+            src={Gnus}
+            className={(navImageClasses, "hvrbox-layer_bottom")}
+          />
+          <div className="hvrbox-layer_top">
+            <p className={(classes.description, "hvrbox-text")}>
+              Wildebeest in the Maasai Mara
+            </p>
+          </div>
+        </div>
+        <div className="hvrbox">
+          <img
+            alt="Mountains and hat"
+            src={Mountains_Hat}
+            className={(navImageClasses, "hvrbox-layer_bottom")}
+          />
+          <div className="hvrbox-layer_top">
+            <p className={(classes.description, "hvrbox-text")}>
+              Backcountry skiing in the North Cascades mountains
+            </p>
+          </div>
+        </div>
       </GridItem>
       <GridItem xs={12} sm={12} md={3}>
-        <img alt="..." src={Mountains} className={navImageClasses} />
-        <img alt="..." src={Hummus} className={navImageClasses} />
-        <img alt="..." src={XCSkiing} className={navImageClasses} />
-        <img alt="..." src={Jump} className={navImageClasses} />
+        <div className="hvrbox">
+          <img
+            alt="Mountains"
+            src={Mountains}
+            className={(navImageClasses, "hvrbox-layer_bottom")}
+          />
+
+          <div className="hvrbox-layer_top">
+            <p className={(classes.description, "hvrbox-text")}>
+              Fall hike in the North Cascades mountains
+            </p>
+          </div>
+        </div>
+        <div className="hvrbox">
+          <img
+            alt="Hummus"
+            src={Hummus}
+            className={(navImageClasses, "hvrbox-layer_bottom")}
+          />
+
+          <div className="hvrbox-layer_top">
+            <p className={(classes.description, "hvrbox-text")}>
+              Hummus in Porto
+            </p>
+          </div>
+        </div>
+        <div className="hvrbox">
+          <img
+            alt="XCSkiing"
+            src={XCSkiing}
+            className={(navImageClasses, "hvrbox-layer_bottom")}
+          />
+
+          <div className="hvrbox-layer_top">
+            <p className={(classes.description, "hvrbox-text")}>
+              Nordic skiing in eastern WA
+            </p>
+          </div>
+        </div>
+        <div className="hvrbox">
+          <img
+            alt="Jumping horse"
+            src={Jump}
+            className={(navImageClasses, "hvrbox-layer_bottom")}
+          />
+          <div className="hvrbox-layer_top">
+            <p className={(classes.description, "hvrbox-text")}>
+              Cross-country jumping
+            </p>
+          </div>
+        </div>
       </GridItem>
       <GridItem xs={12} sm={12} md={3}>
-        <img alt="..." src={Portugal} className={navImageClasses} />
-        <img alt="..." src={Kenya} className={navImageClasses} />
-        <img alt="..." src={Nellie} className={navImageClasses} />
+        <div className="hvrbox">
+          <img
+            alt="Portugal"
+            src={Portugal}
+            className={(navImageClasses, "hvrbox-layer_bottom")}
+          />
+
+          <div className="hvrbox-layer_top">
+            <p className={(classes.description, "hvrbox-text")}>
+              Exploring Porto, Portugal
+            </p>
+          </div>
+        </div>
+        <div className="hvrbox">
+          <img
+            alt="Kenya"
+            src={Kenya}
+            className={(navImageClasses, "hvrbox-layer_bottom")}
+          />
+
+          <div className="hvrbox-layer_top">
+            <p className={(classes.description, "hvrbox-text")}>
+              Flying over Rift Valley, Kenya
+            </p>
+          </div>
+        </div>
+        <div className="hvrbox">
+          <img
+            alt="Dog"
+            src={Nellie}
+            className={(navImageClasses, "hvrbox-layer_bottom")}
+          />
+          <div className="hvrbox-layer_top">
+            <p className={(classes.description, "hvrbox-text")}>
+              My dog Nellie
+            </p>
+          </div>
+        </div>
       </GridItem>
       <GridItem xs={12} sm={12} md={3}>
-        <img alt="..." src={Skiing} className={navImageClasses} />
-        <img alt="..." src={Waterfall} className={navImageClasses} />
-        <img alt="..." src={Sushi} className={navImageClasses} />
+        <div className="hvrbox">
+          <img
+            alt="Skiing"
+            src={Skiing}
+            className={(navImageClasses, "hvrbox-layer_bottom")}
+          />
+
+          <div className="hvrbox-layer_top">
+            <p className={(classes.description, "hvrbox-text")}>
+              More backcountry skiing in the North Cascades mountains
+            </p>
+          </div>
+        </div>
+        <div className="hvrbox">
+          <img
+            alt="Waterfall"
+            src={Waterfall}
+            className={(navImageClasses, "hvrbox-layer_bottom")}
+          />
+          <div className="hvrbox-layer_top">
+            <p className={(classes.description, "hvrbox-text")}>
+              Secluded waterfall in eastern WA
+            </p>
+          </div>
+        </div>
+        <div className="hvrbox">
+          <img
+            alt="Sushi"
+            src={Sushi}
+            className={(navImageClasses, "hvrbox-layer_bottom")}
+          />
+          <div className="hvrbox-layer_top">
+            <p className={(classes.description, "hvrbox-text")}>
+              4€ sushi in Portugal
+            </p>
+          </div>
+        </div>
       </GridItem>
     </GridContainer>
   );
