@@ -3,7 +3,7 @@
   "version": "1.8.0",
   "description": "Personal website made using a Material Kit React app.",
   "private": true,
-  "homepage": "https://daniellemott.github.io",
+  "homepage": "https://daniellemott.github.io/me/",
   "main": "dist/index.js",
   "dependencies": {
     "@material-ui/core": "4.3.2",
