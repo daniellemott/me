@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 
 // eslint-disable-next-line no-unused-vars
-import { Carousel, ReactBootstrapStyle } from "react-bootstrap";
-import { Container } from "./styled";
+import { ReactBootstrapStyle, Carousel } from "react-bootstrap";
+import { Container, CarouselWrapper, CarouselItemWrapper } from "./styled";
 import ImgMediaCard from "../Card/Card.js";
 
 import "../../../../node_modules/bootstrap/dist/css/bootstrap.css";
@@ -34,33 +34,20 @@ export class HorizontalSliderContainer extends Component {
     return (
       //TODO carousel items should be defined in an array
       <Container>
-        <Carousel
+        <CarouselWrapper
           activeIndex={index}
           onSelect={this.handleSelect}
-          style={{
-            width: "500px",
-            height: "350px",
-            margin: "auto",
-            color: "red"
-          }}
         >
           {ImgList.map(function(Img, index) {
             return (
               <Carousel.Item key={index}>
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    padding: "20px",
-                    height: "350px"
-                  }}
-                >
+                <CarouselItemWrapper>
                   <ImgMediaCard></ImgMediaCard>
-                </div>
+                  </CarouselItemWrapper>
               </Carousel.Item>
             );
           })}
-        </Carousel>
+        </CarouselWrapper>
       </Container>
     );
   }
