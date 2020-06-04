@@ -2,7 +2,7 @@ import React from "react";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 
-import Gnus from "assets/img/GalleryImg/Gnus.jpg";
+import Cacti from "assets/img/GalleryImg/Cacti.jpg";
 import Mountains from "assets/img/GalleryImg/Mountains.jpg";
 import Skiing from "assets/img/GalleryImg/Skiing.jpg";
 import XCSkiing from "assets/img/GalleryImg/XCSkiing.jpg";
@@ -14,7 +14,7 @@ import Hummus from "assets/img/GalleryImg/Hummus.jpg";
 import Sushi from "assets/img/GalleryImg/Sushi.jpg";
 import Mountains_Hat from "assets/img/GalleryImg/Mountains_Hat.jpg";
 import Jump from "assets/img/GalleryImg/Jump.jpg";
-import Kenya from "assets/img/GalleryImg/Kenya.jpg";
+import Hink_House from "assets/img/GalleryImg/Hink_House.jpg";
 
 import classNames from "classnames";
 import styles from "assets/jss/material-kit-react/views/profilePage.js";
@@ -43,13 +43,13 @@ export default function Gallery() {
         </div>
         <div className="hvrbox">
           <img
-            alt="Gnus"
-            src={Gnus}
+            alt="Cacti"
+            src={Cacti}
             className={(navImageClasses, "hvrbox-layer_bottom")}
           />
           <div className="hvrbox-layer_top">
             <p className={(classes.description, "hvrbox-text")}>
-              Wildebeest in the Maasai Mara
+              Cacti in San Francisco
             </p>
           </div>
         </div>
@@ -135,14 +135,14 @@ export default function Gallery() {
         </div>
         <div className="hvrbox">
           <img
-            alt="Kenya"
-            src={Kenya}
+            alt="Skiing"
+            src={Hink_House}
             className={(navImageClasses, "hvrbox-layer_bottom")}
           />
 
           <div className="hvrbox-layer_top">
             <p className={(classes.description, "hvrbox-text")}>
-              Flying over Rift Valley, Kenya
+              Skiing down Hink House
             </p>
           </div>
         </div>

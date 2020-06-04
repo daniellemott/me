@@ -80,12 +80,7 @@ export default function ProfilePage(props) {
             <div className={classes.description}>
               <EndP>
                 Hi, I'm Danielle! I study computer science and math at Queen's
-                University. I never thought I'd be interested in computer
-                science. When I imagined a coder, I pictured the stereotypical
-                geeky kid fiddling with a motherboard in a dreary basement.
-                Luckily, my friend in my first year math class encouraged me to
-                try coding and I've been hooked since then. When I decide it's
-                time to turn off my laptop, I can be found exploring the North
+                University. When I'm not on my laptop, I can be found exploring the North
                 Cascades mountains or enjoying a glass of <s>red wine</s> water.
               </EndP>
             </div>
@@ -94,7 +89,7 @@ export default function ProfilePage(props) {
                 className={classes.title}
                 style={{ display: "block", fontSize: "1rem", margin: "0" }}
               >
-                My Adventures
+                The adventures I've been lucky to enjoy
               </h3>
               <Gallery></Gallery>
             </section>
@@ -110,10 +105,11 @@ export default function ProfilePage(props) {
                         margin: "0"
                       }}
                     >
-                      What I Enjoy
+                      What I'm up to
                     </h3>
                     <p style={{ fontStyle: "italic" }}>
-                      This section is coming soon.
+                      This section is coming soon. I hope to share what I've been 
+                      reading, listening to, and watching.
                     </p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Suspendisse quis euismod orci. Morbi sed elementum purus, et
