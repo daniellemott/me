@@ -114,7 +114,7 @@ export default function Gallery() {
           />
           <div className="hvrbox-layer_top">
             <p className={(classes.description, "hvrbox-text")}>
-              Cross-country jumping
+              Wuhoo!
             </p>
           </div>
         </div>
@@ -154,7 +154,7 @@ export default function Gallery() {
           />
           <div className="hvrbox-layer_top">
             <p className={(classes.description, "hvrbox-text")}>
-              My dog Nellie
+              My dog Nellie :) 
             </p>
           </div>
         </div>
@@ -169,7 +169,7 @@ export default function Gallery() {
 
           <div className="hvrbox-layer_top">
             <p className={(classes.description, "hvrbox-text")}>
-              More backcountry skiing in the North Cascades mountains
+              More backcountry skiing in the North Cascades mountains!!
             </p>
           </div>
         </div>

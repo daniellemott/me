@@ -81,7 +81,7 @@ export default function ProfilePage(props) {
               <EndP>
                 Hi, I'm Danielle! I study computer science and math at Queen's
                 University. When I'm not on my laptop, I can be found exploring the North
-                Cascades mountains or enjoying a glass of <s>red wine</s> water.
+                Cascades mountains, hanging out with my dog, or practicing meditation.
               </EndP>
             </div>
             <section id="Gallery">
@@ -109,7 +109,9 @@ export default function ProfilePage(props) {
                     </h3>
                     <p style={{ fontStyle: "italic" }}>
                       This section is coming soon. I hope to share what I've been 
-                      reading, listening to, and watching.
+                      reading, listening to, and watching. I'm starting to read books from the 
+                      <a href="https://bookshop.org/lists/antiracist-reading-list?fbclid=IwAR2HhFEnYV7xL5gLRzTUF0iEN7FlYe_H3AOV1sYlxaXvOVv13z4FrYx3ln4"> Antiracist Reading List. </a>
+                      Check it out!
                     </p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Suspendisse quis euismod orci. Morbi sed elementum purus, et
