@@ -89,7 +89,7 @@ export default function ProfilePage(props) {
                 className={classes.title}
                 style={{ display: "block", fontSize: "1rem", margin: "0" }}
               >
-                The adventures I've been lucky to enjoy
+                My Adventures
               </h3>
               <Gallery></Gallery>
             </section>

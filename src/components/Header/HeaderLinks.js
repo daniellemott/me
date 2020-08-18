@@ -11,7 +11,7 @@ const useStyles = makeStyles(styles);
 const HeaderTitles = {
   "Who I Am": "#About",
   "My Adventures": "#Gallery",
-  "What I Enjoy": "#Interests"
+  "What I'm up to": "#Interests"
 };
 
 export default function HeaderLinks() {

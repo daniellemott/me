@@ -31,7 +31,7 @@ export default function ImgMediaCard() {
           <Typography gutterBottom variant="h5" component="h2">
           Lorem ipsum
           </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
+          <Typography variant="body2" color="#212529" component="p">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu ex luctus, mollis neque et, eleifend risus. 
           </Typography>
         </CardContent>
