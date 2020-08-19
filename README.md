@@ -1,2 +1,2 @@
 ### Personal Wesbite
-In progress...
+In progress... still need to remove unused code from create-react-app :) 
