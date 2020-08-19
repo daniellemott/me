@@ -61,7 +61,7 @@ export default function ProfilePage(props) {
                   </div>
                   <div className={classes.name}>
                     <h3 className={classes.title}>Danielle Mott</h3>
-                    <h6>SOFTWARE ENGINEER</h6>
+                    <h6>HUMAN | SOFTWARE ENGINEER</h6>
                     {Object.keys(LinksDict).map((Link, index) => (
                       <Button
                         justIcon
@@ -81,7 +81,7 @@ export default function ProfilePage(props) {
               <EndP>
                 Hi, I'm Danielle! I study computer science and math at Queen's
                 University. When I'm not on my laptop, I can be found exploring the North
-                Cascades mountains, hanging out with my dog, or practicing meditation.
+                Cascades mountains, cooking tasty vegetarian meals, and jamming out to music.
               </EndP>
             </div>
             <section id="Gallery">
@@ -107,21 +107,15 @@ export default function ProfilePage(props) {
                     >
                       What I'm up to
                     </h3>
-                    <p style={{ fontStyle: "italic" }}>
-                      This section is coming soon. I hope to share what I've been 
-                      reading, listening to, and watching. I'm starting to read books from the 
-                      <a href="https://bookshop.org/lists/antiracist-reading-list?fbclid=IwAR2HhFEnYV7xL5gLRzTUF0iEN7FlYe_H3AOV1sYlxaXvOVv13z4FrYx3ln4"> Antiracist Reading List. </a>
-                      Check it out!
+                    <p>
+                      I just returned to Canada for my final year of university. I am taking Operating Systems, Algorithms,
+                      System Level Programming, and Fundamentals of Software Development this semester. I am also excited to be starting my third
+                      year as a member Queen's Women in Computing!
                     </p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse quis euismod orci. Morbi sed elementum purus, et
-                    convallis tortor. Nunc dapibus arcu vitae sagittis pulvinar.
-                    Integer tincidunt ligula ut ultrices rhoncus. Class aptent
-                    taciti sociosqu ad litora torquent per conubia nostra, per
-                    inceptos himenaeos. Mauris placerat condimentum arcu, sed
-                    consectetur urna commodo vulputate. Morbi ac luctus odio.
-                    Etiam blandit diam fermentum est gravida posuere hendrerit
-                    non lorem.
+                    This summer I worked remotely as a software engineering intern on an AI team from my hometown in
+                    Washington. Working remotely during the pandemic challenged me to develop better self-care habits. I started
+                    consistently meditating, <i>actually</i> taking breaks, and limiting my screen time. It's amazing how 
+                    much these things have helped me!
                   </AboutWrapper>
                 </div>
                 <HorizontalSliderContainer></HorizontalSliderContainer>
