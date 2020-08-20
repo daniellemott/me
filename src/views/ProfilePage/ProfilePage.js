@@ -113,9 +113,9 @@ export default function ProfilePage(props) {
                       year as a member Queen's Women in Computing!
                     </p>
                     This summer I worked remotely as a software engineering intern on an AI team from my hometown in
-                    Washington. Working remotely during the pandemic challenged me to develop better self-care habits. I started
-                    consistently meditating, <i>actually</i> taking breaks, and limiting my screen time. It's amazing how 
-                    much these things have helped me!
+                    Washington. Working remotely during the pandemic challenged me to improve my self-care habits. I started
+                    consistently meditating, <i>actually</i> taking breaks, and limiting my screen time. Outside of work, I 
+                    did some late season backcountry skiing and plenty of trail running!
                   </AboutWrapper>
                 </div>
                 <HorizontalSliderContainer></HorizontalSliderContainer>

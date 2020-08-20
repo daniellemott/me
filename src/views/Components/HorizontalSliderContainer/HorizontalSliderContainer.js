@@ -6,19 +6,26 @@ import { Container, CarouselWrapper, CarouselItemWrapper } from "./styled";
 import MusicImg from "assets/img/GalleryImg/Music.jpg";
 import BookImg from "assets/img/GalleryImg/Books.jpg";
 import MeditationImg from "assets/img/GalleryImg/Meditation.jpg";
+import SummerImg from "assets/img/GalleryImg/Summer.jpg";
+
 
 import ImgMediaCard from "../Card/Card.js";
 
 import "../../../../node_modules/bootstrap/dist/css/bootstrap.css";
 import "./arrows.css";
 
+let Summer = {
+  title: 'My summer highlights',
+  image: SummerImg,
+}
+
 let Music = {
-  title: 'My favourite songs of summer 2020',
+  title: 'Favourite songs of summer 2020',
   image: MusicImg,
 }
 
 let Books = {
-  title: 'My favourite books of summer 2020',
+  title: 'Favourite books of summer 2020',
   image: BookImg,
 }
 
@@ -27,7 +34,7 @@ let Meditation = {
   image: MeditationImg,
 }
 
-const ImgList = [Books, Meditation, Music];
+const ImgList = [Summer, Books, Meditation, Music];
 
 export class HorizontalSliderContainer extends Component {
   constructor(props, context) {
