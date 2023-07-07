@@ -61,7 +61,7 @@ export default function ProfilePage(props) {
                   </div>
                   <div className={classes.name}>
                     <h3 className={classes.title}>Danielle Mott</h3>
-                    <h6>HUMAN | SOFTWARE ENGINEER</h6>
+                    <h6>SOFTWARE ENGINEER</h6>
                     {Object.keys(LinksDict).map((Link, index) => (
                       <Button
                         justIcon
