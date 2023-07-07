@@ -79,9 +79,10 @@ export default function ProfilePage(props) {
             </GridContainer>
             <div className={classes.description}>
               <EndP>
-                Hi, I'm Danielle! I study computer science and math at Queen's
-                University. When I'm not on my laptop, I can be found exploring the North
-                Cascades mountains, cooking tasty vegetarian meals, and jamming out to music.
+                Hi, I'm Danielle! I'm a software engineer on a core networking team at Microsoft.
+                I studied computer science and math at Queen's University in Kingston, Ontario. 
+                When I'm not on my laptop, I can be found exploring the North Cascades mountains, 
+                cooking tasty vegetarian meals, and jamming out to country music.
               </EndP>
             </div>
             <section id="Gallery">
