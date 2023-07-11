@@ -109,14 +109,20 @@ export default function ProfilePage(props) {
                       What I'm up to
                     </h3>
                     <p>
-                      I just returned to Canada for my final year of university. I am taking Operating Systems, Algorithms,
-                      System Level Programming, and Fundamentals of Software Development this semester. I am also excited to be starting my third
-                      year as a member Queen's Women in Computing!
+                      I just celebrated my two year anniversary in Seattle! How time flies! It’s great to be back on the West (best) Coast.
+                      I spent the first year in Washington catching up on all the sleep I did not get in university. Now that I’m properly 
+                      rested, I’ve been exploring everything Washington has to offer and contemplating what I want from adult life. 
                     </p>
-                    This summer I worked remotely as a software engineering intern on an AI team from my hometown in
-                    Washington. Working remotely during the pandemic challenged me to improve my self-care habits. I started
-                    consistently meditating, <i>actually</i> taking breaks, and limiting my screen time. Outside of work, I 
-                    did some late season backcountry skiing and plenty of trail running!
+                    <p>
+                      Recently I launched myself into as many sports as possible. I’m an avid soccer player, trail runner, gym rat, hiker, 
+                      backcountry skier, and yogi. To exercise my mind, I completed an 8 week meditation course this winter, courtesy of 
+                      the Seattle Mindfulness Center. Additionally, I read the books “Breaking the Habit of Being Yourself” and 
+                      “The Surrender Project”. Both were incredible resources to me. I’ve since implemented a consistent daily meditation 
+                      practice. The stress reduction and mental clarity I gained from my daily practice has truly changed my life. 
+                    </p>
+                    <p>
+                      Stay tuned for further updates! I’m always on the hunt for the next adventure. 
+                    </p>
                   </AboutWrapper>
                 </div>
                 <HorizontalSliderContainer></HorizontalSliderContainer>
