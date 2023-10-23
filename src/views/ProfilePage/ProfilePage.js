@@ -117,7 +117,7 @@ export default function ProfilePage(props) {
                       Recently I launched myself into as many sports as possible. I’m an avid soccer player, trail runner, gym rat, hiker, 
                       backcountry skier, and yogi. To exercise my mind, I completed an 8 week meditation course this winter, courtesy of 
                       the Seattle Mindfulness Center. Additionally, I read the books “Breaking the Habit of Being Yourself” and 
-                      “The Surrender Project”. Both were incredible resources to me. I’ve since implemented a consistent daily meditation 
+                      “The Surrender Experiment”. Both were incredible resources to me. I’ve since implemented a consistent daily meditation 
                       practice. The stress reduction and mental clarity I gained from my daily practice has truly changed my life. 
                     </p>
                     <p>
