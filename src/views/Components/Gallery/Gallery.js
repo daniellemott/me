@@ -193,7 +193,7 @@ export default function Gallery() {
           />
           <div className="hvrbox-layer_top">
             <p className={(classes.description, "hvrbox-text")}>
-              4€ sushi in Portugal
+              Sushi in Portugal
             </p>
           </div>
         </div>
